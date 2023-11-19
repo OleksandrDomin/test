@@ -8,7 +8,7 @@
 // const arguments = ("1") => {
 
 //     console.log(arguments)
-// }; vopros
+// }; 
 
 // function dec(){
 //     var car = "BMW";
@@ -29,19 +29,30 @@
 // dec();
 
 // -------------------------
-const animals = [
-  { kind: "Cow", order: 3, food: 100, speed: 10 },
-  { kind: "Dog", order: 2, food: 20, speed: 100 },
-  { kind: "Cat", order: 1, food: 3, speed: 150 },
-];
+// const animals = [
+//   { kind: "Cow", id: 3, food: 100, speed: 10 },
+//   { kind: "Dog", id: 2, food: 20, speed: 100 },
+//   { kind: "Cat", id: 1, food: 3, speed: 150 },
+// ];
 
-function filterAnimals(filterFunction, animals) {
-    return animals
-        .filter(filterFunction)
-        .sort((animal1, animal2) => animal1.order < animal2.order ? -1 : 1);
-};
+// function filterAnimals(filterFunction, animals) {
+//     return animals
+//         .filter(filterFunction)
+//         .sort((animal1, animal2) => animal1.id < animal2.id ? -1 : 1);
+// };
 
-const funcFilter = ({ speed }) => speed > 90;
-console.log(filterAnimals(funcFilter, animals));
+// const speedFilter = ({ speed }) => speed > 90;
+// const foodFilter = ({ food }) => food > 19;
 
+// console.log(filterAnimals(speedFilter, animals));
+// console.log(filterAnimals(foodFilter, animals));
 
+const multipyNum = (num1, num2) => {
+    if (num2) {
+        return num1 * num2;
+    }
+    return (num2) => num1 * num2
+}
+console.log(multipyNum(2, 3));
+const addNum1 = multipyNum(2);
+console.log(addNum1(20))

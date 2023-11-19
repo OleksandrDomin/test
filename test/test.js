@@ -47,12 +47,12 @@
 // console.log(filterAnimals(speedFilter, animals));
 // console.log(filterAnimals(foodFilter, animals));
 
-const multipyNum = (num1, num2) => {
-    if (num2) {
-        return num1 * num2;
-    }
-    return (num2) => num1 * num2
-}
-console.log(multipyNum(2, 3));
-const addNum1 = multipyNum(2);
-console.log(addNum1(20))
+// const multipyNum = (num1, num2) => {
+//     if (num2) {
+//         return num1 * num2;
+//     }
+//     return (num2) => num1 * num2
+// }
+// console.log(multipyNum(2, 3));
+// const addNum1 = multipyNum(2)(20);
+// console.log(addNum1)

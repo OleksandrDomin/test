@@ -8,7 +8,7 @@
 // const arguments = ("1") => {
 
 //     console.log(arguments)
-// }; 
+// };
 
 // function dec(){
 //     var car = "BMW";
@@ -56,3 +56,15 @@
 // console.log(multipyNum(2, 3));
 // const addNum1 = multipyNum(2)(20);
 // console.log(addNum1)
+
+const array = ["Bob", "Dood", "Cow", "Jone", "Dilan", "Kurt"];
+console.log(array);
+// console.log(array.slice(1, 3))
+const string = "Hello, world!";
+// console.log(Array.isArray(array))
+let i = 1;
+const a = array.forEach((string) => {
+    
+
+    console.log(`${ string }` +  i++)
+ })

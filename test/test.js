@@ -57,14 +57,35 @@
 // const addNum1 = multipyNum(2)(20);
 // console.log(addNum1)
 
-const array = ["Bob", "Dood", "Cow", "Jone", "Dilan", "Kurt"];
-console.log(array);
-// console.log(array.slice(1, 3))
-const string = "Hello, world!";
-// console.log(Array.isArray(array))
-let i = 1;
-const a = array.forEach((string) => {
-    
+// const array = ["Bob", "Dood", "Cow", "Jone", "Dilan", "Kurt"];
+// console.log(array);
+// // console.log(array.slice(1, 3))
+// const b = "Hello, world!";
+// // console.log(Array.isArray(array))
+// let i = 1;
+// const a = array.forEach((arr) => {
+//     console.log(`Hello ${arr} ${i++}`)
+//  })
 
-    console.log(`${ string }` +  i++)
- })
+
+// for (var i = 0; i < 10; i++) {
+//     setTimeout(()=>console.log(i),200)
+// }
+
+
+// for (let i = 0; i < 10; i++) {
+//     setTimeout(()=>console.log(i), 200)
+// }
+
+
+// for (var i = 0; i < 10; i++) {
+//     setTimeout((a)=>console.log(a), 200, i)
+// }
+
+// for (var i = 0; i < 10; i++) {
+//     const func = () => {
+//        var val = i
+//         setTimeout(()=>console.log(val),200)
+//     }
+//     func();
+// }

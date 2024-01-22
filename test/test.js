@@ -109,7 +109,7 @@
 // function checkAge(age) {
 //   let message;
 
-//   if (age >= 18) { 
+//   if (age >= 18) {
 //     message = 'You are an adult';
 //   } else {
 //     message = 'You are a minor';
@@ -118,3 +118,23 @@
 //   return message;
 // };
 // console.log(checkAge(0));
+
+
+// function checkStorage(available, ordered) {
+// const message = (available > ordered) ? "Order is processed, our manager will contact you.":"Not enough goods in stock!"
+// return message
+// };
+// console.log(checkStorage(1000, 130));
+
+
+// const message = {
+//     order: "Order is processed, our manager will contact you.",
+//     unorder: "Not enough goods in stock!"
+// };
+
+// const checkStorage = (available, ordered) => {
+//     const result = available > ordered ? message.order : message.unorder;
+//     return result;
+// }
+
+// console.log(checkStorage(100, 130));

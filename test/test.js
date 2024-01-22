@@ -90,3 +90,31 @@
 //     func();
 // }
 
+// function isAdult(age) {
+//   const passed = age >= 18;
+//   return passed;
+// };
+
+
+
+// console.log(isAdult(5));
+
+// function isValidPassword(password) {
+//     const SAVED_PASSWORD = "jqueryismyjam";
+//     const isMatch = SAVED_PASSWORD === password;
+// return isMatch
+// }
+// console.log(isValidPassword("jqueryismyjam"))
+
+// function checkAge(age) {
+//   let message;
+
+//   if (age >= 18) { 
+//     message = 'You are an adult';
+//   } else {
+//     message = 'You are a minor';
+//   }
+
+//   return message;
+// };
+// console.log(checkAge(0));

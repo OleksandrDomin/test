@@ -138,3 +138,105 @@
 // }
 
 // console.log(checkStorage(100, 130));
+
+// function checkStorage(value, order) {
+//     let message;
+//     if (value > order) {
+//         return message = "Not enough goods in stock!"
+//     }
+     
+//     return message="Order is processed, our manager will contact you."
+    
+// }
+ 
+// console.log(checkStorage(100, 130));
+
+// let a = 5;
+// let b = 10;
+// let c = 15;
+// let d = 20;
+
+// // Change code below this line
+// a += 2;
+// b -= 4;
+// c *= 3;
+// d /= 10;
+
+
+// function plus(a) {
+//     a +=2;
+//     return a
+// }
+// console.log(plus(5))
+
+// function minus(a) {
+//     a -= 4
+//     return a
+// }
+// console.log(minus(10))
+
+// function umn(a) {
+//     a *= 3
+//     return a
+// }
+// console.log(umn(15))
+
+// function del(a) {
+//     a /= 10
+//     return a
+// }
+// console.log(del(20))
+
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//     let message;
+//      const totalPrice = pricePerDroid * orderedQuantity;
+//  customerCredits = customerCredits - totalPrice;
+   
+    
+//     if (totalPrice > customerCredits) {
+//         return message = "Insufficient funds!"
+//     }
+   
+// return message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`
+// }
+// console.log(makeTransaction(3000, 2, 23000))
+
+// function checkPassword(password) {
+//     let message;
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     if (password === ADMIN_PASSWORD) {
+//     message = "Welcome!"
+//     }
+//     else if (password === null) {
+//     message = "Canceled by user!"
+//     }
+//     else {
+//     message = "Access denied, wrong password!"
+//     }
+// return message;
+
+// }
+// console.log(checkPassword("mangohackzor"))
+// console.log(checkPassword(null))
+// console.log(checkPassword("jqueryismyjam"))
+
+// function checkStorage(available, ordered){
+//     let message;
+//     if (ordered === 0) {
+//         message = "There are no products in the order!"
+//     }
+//     else if (ordered > available) {
+//         message = "Your order is too large, there are not enough items in stock!"
+//     }
+//         else {
+//             message = "The order is accepted, our manager will contact you"
+//     }
+//     return message
+// }
+
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+// console.log(checkStorage(70, 0));
+// console.log(checkStorage(200, 20));
+// console.log(checkStorage(200, 250));
+// console.log(checkStorage(150, 0));

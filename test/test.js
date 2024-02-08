@@ -67,16 +67,13 @@
 //     console.log(`Hello ${arr} ${i++}`)
 //  })
 
-
 // for (var i = 0; i < 10; i++) {
 //     setTimeout(()=>console.log(i),200)
 // }
 
-
 // for (let i = 0; i < 10; i++) {
 //     setTimeout(()=>console.log(i), 200)
 // }
-
 
 // for (var i = 0; i < 10; i++) {
 //     setTimeout((a)=>console.log(a), 200, i)
@@ -94,8 +91,6 @@
 //   const passed = age >= 18;
 //   return passed;
 // };
-
-
 
 // console.log(isAdult(5));
 
@@ -119,13 +114,11 @@
 // };
 // console.log(checkAge(0));
 
-
 // function checkStorage(available, ordered) {
 // const message = (available > ordered) ? "Order is processed, our manager will contact you.":"Not enough goods in stock!"
 // return message
 // };
 // console.log(checkStorage(1000, 130));
-
 
 // const message = {
 //     order: "Order is processed, our manager will contact you.",
@@ -144,11 +137,11 @@
 //     if (value > order) {
 //         return message = "Not enough goods in stock!"
 //     }
-     
+
 //     return message="Order is processed, our manager will contact you."
-    
+
 // }
- 
+
 // console.log(checkStorage(100, 130));
 
 // let a = 5;
@@ -161,7 +154,6 @@
 // b -= 4;
 // c *= 3;
 // d /= 10;
-
 
 // function plus(a) {
 //     a +=2;
@@ -191,12 +183,11 @@
 //     let message;
 //      const totalPrice = pricePerDroid * orderedQuantity;
 //  customerCredits = customerCredits - totalPrice;
-   
-    
+
 //     if (totalPrice > customerCredits) {
 //         return message = "Insufficient funds!"
 //     }
-   
+
 // return message = `You ordered ${orderedQuantity} droids, you have ${customerCredits} credits left`
 // }
 // console.log(makeTransaction(3000, 2, 23000))
@@ -240,3 +231,60 @@
 // console.log(checkStorage(200, 20));
 // console.log(checkStorage(200, 250));
 // console.log(checkStorage(150, 0));
+
+// function isNumberInRange(start, end, number) {
+//  const isInRange = (number>=start && number <=end)
+// return isInRange
+// };
+// console.log(isNumberInRange(10, 30, 20));
+
+// function checkIfCanAccessContent(subType){
+//       const canAccessContent = (subType === "vip" || subType === "pro");
+//     return canAccessContent;
+// };
+
+// console.log(checkIfCanAccessContent("pro"))
+
+// function isNumberNotInRange(start, end, number) {
+//     const control = (number >= start && number <= end)
+//     const remuveControl = !control
+//     return remuveControl
+// }
+// console.log(isNumberNotInRange(10, 50, 20))
+
+// function getDiscount(totalSpent) {
+//   const BASE_DISCOUNT = 0;
+//   const BRONZE_DISCOUNT = 2;
+//   const SILVER_DISCOUNT = 5;
+//   const GOLD_DISCOUNT = 10;
+//  let discount;
+
+//     if (totalSpent >= 50000) {
+//         discount = GOLD_DISCOUNT;
+//     }
+//     if (totalSpent >= 20000 && totalSpent < 50000) {
+//         discount = SILVER_DISCOUNT;
+//     }
+//     if (totalSpent >= 5000 && totalSpent < 20000) {
+//              discount = BRONZE_DISCOUNT;
+//     }
+//     if (totalSpent < 5000) {
+//         discount = BASE_DISCOUNT;
+//     }
+
+//   return `Your discount is ${discount}%`;
+// }
+// console.log(getDiscount(500000000));
+// console.log(getDiscount(30000));
+// console.log(getDiscount(6000));
+// console.log(getDiscount(500));
+
+
+function checkStorage(available, ordered) {
+    let message;
+    message = (available > ordered) ? "The order is accepted, our manager will contact you" : "Not enough goods in stock!";
+    return message;
+}
+
+console.log(checkStorage(100, 50));
+console.log(checkStorage(100, 130));

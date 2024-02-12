@@ -1,3 +1,5 @@
+// "use strict";
+
 // function arr (...rest)
 // {
 //     console.log(arguments)
@@ -279,12 +281,155 @@
 // console.log(getDiscount(6000));
 // console.log(getDiscount(500));
 
+// function checkStorage(available, ordered) {
+//     let message;
+//     message = (available > ordered) ? "The order is accepted, our manager will contact you" : "Not enough goods in stock!";
+//     return message;
+// }
 
-function checkStorage(available, ordered) {
-    let message;
-    message = (available > ordered) ? "The order is accepted, our manager will contact you" : "Not enough goods in stock!";
-    return message;
+// console.log(checkStorage(100, 50));
+// console.log(checkStorage(100, 130));
+
+// function checkPassword(password) {
+//     const ADMIN_PASSWORD = "jqueryismyjam";
+//     let message;
+//     message = (password === ADMIN_PASSWORD) ? "Access is allowed" : "Access denied, wrong password!";
+//     return message;
+// }
+// console.log(checkPassword("jqueryismyjam"))
+// console.log(checkPassword("jqueryfgffg"))
+
+// function getSubscriptionPrice(type) {
+//     let prise;
+//     switch (type) {
+//         case "starter":
+//            prise =  0
+//             break;
+//         case "professional":
+//            prise =  20
+//             break;
+
+//           case "organization":
+//            prise =  50
+//             break;
+
+//         default:
+//             prise = "Please enter correct type"
+//             break;
+//     }
+//     return prise;
+// }
+// console.log(getSubscriptionPrice("organiz"))
+
+// function checkPassword(password) {
+//   let message;
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   switch (password) {
+//     case ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+
+//     case null:
+//       message = "Canceled by user!";
+//       break;
+
+//     default:
+//       message = "Access denied, wrong password!";
+//       break;
+//   }
+//   return message;
+// }
+// console.log(checkPassword("jqueryismyjam"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("jquery"));
+
+// function getShippingCost(country) {
+//     let message;
+// switch (country) {
+//     case "China":
+//         message = `Shipping to ${country} will cost 100 credits`
+//         break;
+//     case "Chile":
+//         message = `Shipping to ${country} will cost 250 credits`
+//         break;
+
+//     case "Australia":
+//         message = `Shipping to ${country} will cost 140 credits`
+//         break;
+
+//   case "Jamaica ":
+//         message = `Shipping to ${country} will cost 120 credits`
+//         break;
+
+//     default:
+//         message = "Sorry, there is no delivery to your country";
+//         break;
+// }
+
+//     return message;
+// }
+// console.log(getShippingCost("Chinaffffff"));
+// console.log(getShippingCost("Chile"));
+
+// **********************************************************************
+// console.log(typeof NaN);
+
+// (() => this.x).bind({ x: 5 })
+// (() => this.x).bind({ x: 5 })()
+// (() => this.x).apply({ x: 5 })
+// Jak se může stát XSS útok?
+
+// Čemu se rovná [0, 1, 2, 3, 4].filter(Boolean).filter(x => x % 2 === 1).map(x => x * 2)?
+
+// [1, 3]
+// [2, 6]
+// [2, 4, 6, 8]
+// [0, 2, 6]
+// *****************************************************************************
+
+// const petya = {
+//     userName: "Petya",
+//     showName() {
+//         console.log(petya.userName)
+//     }
+// }
+// petya.showName()
+
+// const tolya = {
+//     userName: "Tolya",
+//     showName() {
+//         console.log(this.userName)
+//     }
+// }
+// tolya.showName()
+
+// const bookShelf = {
+//   authors: ["John", "Bil", "Drimon"],
+//   showAuthor() {
+//     return this.authors;
+//   },
+//   addAuthor(authorName) {
+//     this.authors.push(authorName);
+//   },
+// };
+// console.log(bookShelf.showAuthor());
+// bookShelf.addAuthor("Arnold");
+// console.log(bookShelf.showAuthor());
+
+// function foo() {
+//     console.log(this);
+// }
+// foo();
+
+function showThis() {
+    console.log("This is this", this);
 }
 
-console.log(checkStorage(100, 50));
-console.log(checkStorage(100, 130));
+showThis();
+
+const user = {
+    userName: "Arnold",
+};
+
+user.showContext = showThis;
+user.showContext();
